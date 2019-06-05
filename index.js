@@ -21,6 +21,7 @@ app.get('/about', (req, res) => {
 app.get('/admin/users', (req, res) => {
     knex('users')
         .then(users => {
+            console.log(users)
             res.render('pages/users', { users })
         })
 

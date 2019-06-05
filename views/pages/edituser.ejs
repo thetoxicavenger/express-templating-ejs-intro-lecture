@@ -20,7 +20,7 @@
                 <% for(var i = 0; i< Object.keys(user).length; i++){ %>
                     <% if (Object.keys(user)[i] !== 'id' && Object.keys(user)[i] !== 'created_at' && Object.keys(user)[i] !== 'updated_at') { %>
                         <div>
-                            <label for="<%= Object.keys(user)[i] %>"><%= Object.keys(user)[i] %></label>
+                            <label><%= Object.keys(user)[i] %></label>
                             <input type="text" value="<%= user[Object.keys(user)[i]] %>" name="<%= Object.keys(user)[i] %>">
                         </div>
                     <% } %>
